@@ -1,4 +1,3 @@
-// src/components/SearchForm.jsx
 import React, { useState, useEffect } from "react";
 import { Form, Input, Button, DatePicker, AutoComplete, Switch } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
@@ -82,7 +81,7 @@ const SearchForm = ({ onSearch }) => {
         ]}
       >
         <AutoComplete
-          airportOptions={(value) => handleAirportSearch(value, "departure")} // options yerine airportOptions kullanıyoruz
+          airportOptions={(value) => handleAirportSearch(value, "departure")} 
           placeholder="Havaalanı kodu veya şehir"
         />
       </Form.Item>
@@ -92,7 +91,7 @@ const SearchForm = ({ onSearch }) => {
         rules={[{ required: true, message: "Lütfen varış havaalanını seçin!" }]}
       >
         <AutoComplete
-          airportOptions={(value) => handleAirportSearch(value, "arrival")} // options yerine airportOptions kullanıyoruz
+          airportOptions={(value) => handleAirportSearch(value, "arrival")} 
           placeholder="Havaalanı kodu veya şehir"
         />
       </Form.Item>
