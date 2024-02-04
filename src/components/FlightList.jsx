@@ -54,7 +54,6 @@ const SearchForm = ({ onSearch }) => {
       // Fiyata göre sıralama işlemini gerçekleştir
       const sortedFlights = await sortFlights("price");
 
-      // Diğer işlemleri buraya ekleyebilirsiniz, detay bilgileri almak gibi
 
       // Ana uygulamaya bildir
       onSearch(sortedFlights.data);
@@ -76,7 +75,7 @@ const SearchForm = ({ onSearch }) => {
         oneWay: false,
       }}
     >
-      {/* Diğer form alanları... */}
+   
 
       <Form.Item label="Sırala" name="sortBy">
         <Select placeholder="Sırala">
