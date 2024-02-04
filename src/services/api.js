@@ -30,7 +30,6 @@ export const getFlightDetails = (flightId) => api.get(`/flights/${flightId}`);
 // Havaalanlarını getir
 export const getAirports = () => api.get("/airports");
 
-// Diğer gerekli API istekleri buraya eklenebilir
 
 const apiService = {
   getAllFlights,
@@ -39,7 +38,7 @@ const apiService = {
   getFlightsByReturnDate,
   sortFlights,
   getFlightDetails,
-  getAirports, // Yeni eklenen satır
+  getAirports
 };
 
 export default apiService;
